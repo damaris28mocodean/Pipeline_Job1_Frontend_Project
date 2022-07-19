@@ -10,14 +10,14 @@ properties(
     ]
 )
 node{
-    /*stage('Preparation'){
+    stage('Preparation'){
         
         sh 'docker stop ${CONTAINER_NAME}'
         
         sh 'docker rm ${CONTAINER_NAME}'
         
         sh 'a=1 && val=`expr $BUILD_NUMBER - $a` && docker image rm ${IMAGE_NAME}:${val}'
-    }*/
+    }
     
     stage('GetSourceCode'){
         
