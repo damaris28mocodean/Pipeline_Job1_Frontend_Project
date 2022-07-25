@@ -16,7 +16,7 @@ node{
         
         sh 'docker rm ${CONTAINER_NAME}'
         
-        sh 'a=1 && val=`expr $BUILD_NUMBER - $a` && docker image rm ${IMAGE_NAME}:${val}'
+        //sh 'a=1 && val=`expr $BUILD_NUMBER - $a` && docker image rm ${IMAGE_NAME}:${val}'
     }
     
     stage('GetSourceCode'){
